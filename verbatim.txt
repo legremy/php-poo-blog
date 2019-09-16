@@ -1,0 +1,51 @@
+Grafikart
+Mise en Pratique de la POO en PHP
+https://www.grafikart.fr/formations/mise-pratique-poo
+2017
+
+I - But:
+(https://www.grafikart.fr/tutoriels/introduction-1082)
+Création d'un blog listant des news avec catégorie
+Mise en place d'une pagination
+Back Office accessible à un utilisateur authentitifé
+Formulaire de contact
+Boutique
+
+Structure modulaire : des modules pourront être activés ou désactivés si besoin
+
+=========================================================================================================
+II - Structure du projet
+(https://www.grafikart.fr/tutoriels/structure-projet-918)
+
+[ ] Composer init
+[ ] Composer req phpunit/phpunit --dev
+[ ] Composer req guzzlehttp/psr7
+[ ] Composer req http-interop/response-sender
+
+[ ] Ajouter un nouvel autoloader au composer.json
+	[ ] le namespace "Framework\" pointera vers le dossier "src/Framework"
+	[ ] composer dump-autoload
+
+[ ] Créer un dossier public
+[ ] Créer un fichier public/index.php
+	[ ] y importer l'autoloader de composer
+
+[ ] Créer la classe Framework\App (src/Framework/App.php)
+	[ ] Créer une méthode Framework\App::run()
+	[ ] Framework\App:run prend en paramètre une ServerRequestInterface 
+	[ ] Framework\App:run renvoie une ResponseInterface
+[ ] Préparer la structure de tests correspondante
+	[ ] Dossier tests/Framework et classe AppTest  
+[ ] Instancier Framework\App dans public/index.php
+[ ] Lancer la méthode Framework\App::run()
+[ ] Préparer 
+
+N'ACCEPTER QUE DES URL SANS / FINAL
+[?] Récupérer l'url appelée
+[?] Tester si l'url finit par un /
+[?] Rediriger en 301 si oui.
+
+
+
+
+
