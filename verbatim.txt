@@ -17,6 +17,8 @@ Structure modulaire : des modules pourront être activés ou désactivés si bes
 II - Structure du projet
 (https://www.grafikart.fr/tutoriels/structure-projet-918)
 
+Préparation de l'environnement
+==============================
 [ ] composer init
 [ ] composer req phpunit/phpunit --dev
 [ ] composer req guzzlehttp/psr7
@@ -28,10 +30,16 @@ II - Structure du projet
 	[ ] le remplir comme la doc le stipule 
 	(https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset)
 [ ] Créer un fichier phpcs à la racine 
+
+[ ] git init
+[ ] Créer un .gitignore, y placer vendor, composer.lock et ce qu'on veut d'autre
+
 [ ] Ajouter un nouvel autoloader au composer.json
 	[ ] le namespace "Framework\" pointera vers le dossier "src/Framework"
 	[ ] composer dump-autoload
 
+Préparation de la structure de fichiers
+=======================================
 [ ] Créer un dossier public
 [ ] Créer un fichier public/index.php
 	[ ] y importer l'autoloader de composer
@@ -46,13 +54,19 @@ II - Structure du projet
 [ ] Lancer la méthode Framework\App::run()
 [ ] Préparer 
 
-N'ACCEPTER QUE DES URL SANS / FINAL
+N'accepter que des url sans / final
+===================================
 [?] Récupérer l'url appelée
 [?] Tester si l'url finit par un /
 [?] Rediriger en 301 si oui.
 
-[ ] git init
-[ ] Créer un .gitignore
+
+
+
+Actions pré-commit et commit (à refaire régulièrement)
+============================
+[ ] Lancer les tests ./vendor/bin/phpunit
+[ ] Lancer le code sniffer ./vendor/bin/phpcs
 [ ] git status
 [ ] git add .
 [ ] git commit -m "Premier message"
