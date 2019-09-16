@@ -17,11 +17,17 @@ Structure modulaire : des modules pourront être activés ou désactivés si bes
 II - Structure du projet
 (https://www.grafikart.fr/tutoriels/structure-projet-918)
 
-[ ] Composer init
-[ ] Composer req phpunit/phpunit --dev
-[ ] Composer req guzzlehttp/psr7
-[ ] Composer req http-interop/response-sender
-
+[ ] composer init
+[ ] composer req phpunit/phpunit --dev
+[ ] composer req guzzlehttp/psr7
+[ ] composer req http-interop/response-sender
+[?] composer req squizlabs/php_codesniffer
+	[ ] y placer le code Example 5.1 Composing a Test Suite Using XML Configuration sur
+	(https://phpunit.readthedocs.io/en/8.3/organizing-tests.html#composing-a-test-suite-using-xml-configuration)
+[ ] Créer un fichier phpunit.xml à la racine
+	[ ] le remplir comme la doc le stipule 
+	(https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset)
+[ ] Créer un fichier phpcs à la racine 
 [ ] Ajouter un nouvel autoloader au composer.json
 	[ ] le namespace "Framework\" pointera vers le dossier "src/Framework"
 	[ ] composer dump-autoload
@@ -44,6 +50,13 @@ N'ACCEPTER QUE DES URL SANS / FINAL
 [?] Récupérer l'url appelée
 [?] Tester si l'url finit par un /
 [?] Rediriger en 301 si oui.
+
+[ ] git init
+[ ] Créer un .gitignore
+[ ] git status
+[ ] git add .
+[ ] git commit -m "Premier message"
+
 
 
 
